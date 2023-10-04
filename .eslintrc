@@ -1,0 +1,14 @@
+{
+  "parser": "@typescript-eslint/parser", // Use the TypeScript parser
+  "extends": ["eslint:recommended", "next"],
+  "parserOptions": {
+    "project": "./tsconfig.json" // Use the project's TypeScript configuration file
+  },
+  "globals": {
+    "React": false // Allow React to be undefined
+  },
+  "rules": {
+    "no-unused-vars": "off",
+    "react/no-unescaped-entities": "off"
+  }
+}
